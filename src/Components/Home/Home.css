@@ -1,0 +1,25 @@
+h3{
+    margin-left: 20rem;
+}
+.welcome{
+    display: flex;
+    justify-content: last baseline;
+    width: 50rem;
+    height: 5rem;
+    position:relative;
+    left: 40%;
+
+}
+.aboutUs{
+display: grid;
+grid-template-columns: 2fr 1fr 4fr;
+grid-template-rows: repeat(3, 2fr);
+
+}
+.team{
+display: grid;
+grid-template-columns: 2fr 4fr;
+grid-template-rows: repeat(4, 5fr);
+align-items: center;
+
+}

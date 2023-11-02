@@ -7,5 +7,6 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <App />
+    <h1>hola</h1>
   </BrowserRouter>
 )

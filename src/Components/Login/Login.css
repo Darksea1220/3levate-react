@@ -1,52 +1,54 @@
 .login-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f8f8f8; /* Fondo gris claro */
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f8f8; /* Fondo gris claro */
+}
 
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-  }
-  
-  label {
-    margin-top: 10px;
-    color: #333; /* Texto negro */
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc; /* Borde gris claro */
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #4caf50; /* Verde */
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
-  }
-  
-  .forgot-password {
-    color: #007bff; /* Azul */
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .forgot-password:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
-  }
-  
+h1 {
+  color: #333; /* Texto negro */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+}
+
+label {
+  margin-top: 10px;
+  color: #333; /* Texto negro */
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc; /* Borde gris claro */
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4caf50; /* Verde */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+}
+
+.forgot-password {
+  color: #007bff; /* Azul */
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline; /* Subrayar al pasar el mouse */
+}

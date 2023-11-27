@@ -4,9 +4,8 @@ import { AppRouter } from './AppRouter'
 function App () {
   return (
     <>
-      <Header />
-      <Home />
-      <Footer />
+      <div className='flex items-center justify center text-center pt-20 pb-6' />
+      <AppRouter />
     </>
   )
 }

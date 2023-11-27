@@ -4,9 +4,7 @@ import { AppRouter } from './AppRouter'
 function App () {
   return (
     <>
-      <Header />
-      <Home />
-      <Footer />
+      <AppRouter />
     </>
   )
 }

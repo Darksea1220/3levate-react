@@ -102,13 +102,15 @@ export function Home () {
             interactive media. My goal with my profession is to <br />
             always evoke emotions and <b className='text-pink-500'>create meaningful  <br />
               connections
-                                      </b> with my clients.<br />
+            </b> with my clients.<br />
             <br />
             I have 3 passions that, combined with design, make <br />
             me fall in love with life: photography, music and <br />
             sunsets.
           </div>
-          <img src={rossProject} className='h-28 w-[600px] -mr-14' />
+          <a href='https://www.behance.net/gallery/128425939/Slovenia-Visual-Identity' target='_blank' rel='noopener noreferrer'>
+            <img src={rossProject} className='h-28 w-[600px] -mr-14' alt='Ross Project' />
+          </a>
         </div>
       </div>
       <div className='w-full flex '>
@@ -127,14 +129,16 @@ export function Home () {
             <br />
             My primary focus is on <b className='text-yellow-500'>research and information <br />
               analysis for UX design
-                                   </b>. <br />
+            </b>. <br />
             <br />
             I enjoy <b className='text-blue-700'>editing audiovisual content</b>, and I'm an <br />
             avid <b className='text-blue-700'>gamer</b>—whether it's board games, video <br />
             games, or sports, I find joy in anything that's fun <br />
             and regulated for play.
           </div>
-          <img src={dougProject} className='h-28 w-[600px] -mr-14' />
+          <a href='https://www.behance.net/gallery/142133801/House-Watcher-interfaces' target='_blank' rel='noopener noreferrer'>
+            <img src={dougProject} className='h-28 w-[600px] -mr-14' alt='Doug Project' />
+          </a>
         </div>
       </div>
       <div className='w-full flex '>
@@ -149,7 +153,7 @@ export function Home () {
             I'm Jota Barney, and I'm a <b className='text-blue-700'>Designer of <br />
               Interactive Media and a Marketing and <br />
               Advertising professional
-                                       </b>. <br />
+            </b>. <br />
             <br />
             I specialize in creating exceptional digital <br />
             experiences, particularly through <b className='text-yellow-500'>UX research</b>. <br />
@@ -160,7 +164,9 @@ export function Home () {
             passionate about <b className='text-pink-500'>data and empathy</b>, which is <br />
             why I allow them to guide me in my profession.
           </div>
-          <img src={jotaProject} className='h-28 w-[600px] -mr-14' />
+          <a href='https://www.behance.net/gallery/141070369/Friends-Mp3-Player' target='_blank' rel='noopener noreferrer'>
+            <img src={jotaProject} className='h-28 w-[600px] -mr-14' alt='Jota Project' />
+          </a>
         </div>
       </div>
       <div className='w-full flex pb-60'>
@@ -185,7 +191,9 @@ export function Home () {
             friends. I like to enjoy every day to the fullest <br />
             and learn something new every day.<br />
           </div>
-          <img src={juanProject} className='h-28 w-[600px] -mr-14' />
+          <a href='https://www.behance.net/gallery/142047863/YouIn' target='_blank' rel='noopener noreferrer'>
+            <img src={juanProject} className='h-28 w-[600px] -mr-14' alt='Juan Project' />
+          </a>
         </div>
       </div>
     </div>

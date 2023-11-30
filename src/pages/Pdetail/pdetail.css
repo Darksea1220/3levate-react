@@ -20,20 +20,5 @@
     font-family: 'Poppins', sans-serif;
   }
 
-  .img-container {
-    width: auto;
-    height: auto;
-  }
-  
-  .img-container img {
-    width: 35%;
-    height: 50%;
-  }
-
-  .right-align {
-    text-align: right;
-  }
-  
-  .right-align img {
-    margin-right: 10px;
-  }
+ 
+ 

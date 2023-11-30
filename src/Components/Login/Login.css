@@ -1,6 +1,4 @@
-*{
-  overflow: hidden;
-}
+
 .login-container {
   display: flex;
   flex-direction: column;
@@ -45,6 +43,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  padding-top: 2rem;
 }
 
 button:hover {

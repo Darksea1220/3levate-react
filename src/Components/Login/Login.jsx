@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Navigate } from 'react-router-dom'
 import { queryUser } from '../Services/db'
+import { AppRouter } from '../../AppRouter'
 import './Login.css'
 
 export function Login () {
@@ -16,7 +17,7 @@ export function Login () {
       if (userExists) {
         setIsLogged(true)
         return (
-          <Navigate to='/ProjectDetail' />
+          <Navigate to='/projects' />
         )
       } else {
         console.log('El E-mail o la contraseña no coinciden')

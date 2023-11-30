@@ -1,5 +1,5 @@
 import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js'
-import { getFirestore, collection } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js'
+import { getFirestore, collection, query, where, getDocs } from 'https://www.gstatic.com/firebasejs/9.10.0/firebase-firestore.js'
 
 const firebaseConfig = {
   apiKey: 'AIzaSyBA3j4aCPf1Be_CQgMzJda0o86k_f-hdOM',
@@ -12,25 +12,22 @@ const firebaseConfig = {
 }
 const app = initializeApp(firebaseConfig)
 const db = getFirestore(app)
-const usersRef = collection(db, 'usuarios')
-const Projects = collection(db, 'Projects')
 
 export const queryUser = async ({
   email,
   password
 }) => {
   try {
-    const q = usersRef.where('email', '==', email).where('password', '==', password)
-    const querySnapshot = await q.get()
+    const q = query(collection(db, 'users'), where('email', '==', email))
+    const querySnapshot = await getDocs(q)
     console.log(querySnapshot)
     querySnapshot.forEach((doc) => {
       console.log(doc.id, '=>', doc.data())
     })
-    console.log('aquí llegué')
     return !querySnapshot.empty
   } catch (error) {
-    console.log('en el error')
-    return false
+    console.log('en el error', error)
+    throw error
   }
 }
 

@@ -9,7 +9,7 @@ export function AppRouter () {
     <main>
       <Routes>
         <Route
-          path=''
+          path='/login'
           element={<Login />}
         />
         <Route

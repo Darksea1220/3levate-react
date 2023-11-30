@@ -1,14 +1,18 @@
+*{
+  overflow: hidden;
+}
 .login-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f8f8f8; /* Fondo gris claro */
+  background-color: #1C1C1C;
+  
 }
 
 h1 {
-  color: #333; /* Texto negro */
+  color: white;
 }
 
 form {
@@ -16,39 +20,43 @@ form {
   flex-direction: column;
   align-items: center;
   width: 300px;
+  
 }
 
 label {
   margin-top: 10px;
-  color: #333; /* Texto negro */
+  color: white;
+  align-self: flex-start;
 }
 
 input {
-  width: 100%;
+  width: calc(100% - 16px);
   padding: 8px;
   margin-bottom: 15px;
-  border: 1px solid #ccc; /* Borde gris claro */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
 }
 
 button {
   width: 100%;
   padding: 10px;
-  background-color: #4caf50; /* Verde */
+  background-color: #4caf50; 
   color: white;
   border: none;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049; /* Verde más oscuro al pasar el mouse */
+  background-color: #45a049; 
 }
 
 .forgot-password {
-  color: #007bff; /* Azul */
+  color: #007bff; 
   cursor: pointer;
   margin-top: 10px;
 }
 
 .forgot-password:hover {
-  text-decoration: underline; /* Subrayar al pasar el mouse */
+  text-decoration: underline; 
 }

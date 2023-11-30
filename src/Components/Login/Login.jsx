@@ -42,7 +42,7 @@ export function Login () {
           placeholder='Enter your E-mail'
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          className='input-field block w-80 rounded-md border border-white border-opacity-10 bg-white bg-opacity-10'
+          className='input-field block w-80 text-white  rounded-md border border-white border-opacity-10 bg-white bg-opacity-10'
         />
         <input
           type='password'
@@ -50,7 +50,7 @@ export function Login () {
           placeholder='Enter your password'
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          className='input-field block w-80 rounded-md border border-white border-opacity-10 bg-white bg-opacity-10'
+          className='input-field block w-80 text-white rounded-md border border-white border-opacity-10 bg-white bg-opacity-10'
         />
         <button type='submit'>Enter</button>
         <p className='forgot-password'>Forgot Password?</p>

@@ -1,10 +1,9 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { PageNotFound, ProjectsPage } from './pages'
 // import { ServicesRouter } from './routers/ServicesRouter'
 import { ProjectDetail } from './pages/Pdetail/ProjectDetail'
 import { Footer, Header, Home, Login, Contact, Services } from './Components'
 import Layout from './Components/Layout/Layout'
-// aqui estuvo dj
 export function AppRouter () {
   return (
     <main>

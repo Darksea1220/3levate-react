@@ -1,5 +1,5 @@
 header {
-  background-color: #333; 
+  background-color: #1C1C1C; 
   padding: 10px; 
   color: white; 
   display: flex;
@@ -32,3 +32,14 @@ a {
   font-size: 18px;
   font-weight: bold;
 }
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+
+

@@ -67,7 +67,7 @@ export function ProjectsPage () {
           <div className='flex flex-col items-start ml-auto mr-20' style={{ width: '20%' }}>
             {/* Botón de Edit */}
             <div className='mt-4'>
-              <Link to='/edit/projects' className='text-blue-500'>Edit</Link>
+              <Link to='/login' className='text-blue-500'>Edit</Link>
             </div>
 
             {projects.slice(1).map((project) => (

@@ -14,12 +14,15 @@ import jota from '../../img/12jota.png'
 import jotaProject from '../../img/13jotaproject.png'
 import juan from '../../img/14juan.png'
 import juanProject from '../../img/15juanproject.png'
+import elevatelogo from '../../img/elevatelogo.png'
 
 export function Home () {
   return (
     <div className='w-full flex flex-col bg-[#1C1C1C]'>
       <img src={bluecircle} className='w-[500px] block absolute top-[-350px] left-[45%]' />
-      <h1 className='w-full text-9xl font-extrabold px-36 py-20 text-gray-50'>3levate</h1>
+      <div className='flex items-center justify mb-8'>
+        <img src={elevatelogo} alt='Logo' className='w-627 h-234 mr-2' />
+      </div>
       <div className='w-full flex pb-20'>
         <div className='w-1/5 h-[400px] flex items-center'>
           <span className='bg-yellow-500 w-full h-56' />

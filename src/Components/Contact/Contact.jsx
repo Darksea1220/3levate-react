@@ -1,4 +1,4 @@
-// import { TextField } from '@mui/material'
+import { TextField } from '@mui/material'
 import React, { useState } from 'react'
 import './Contact.css'
 import redStar from '../../img/4redstar.png'
@@ -19,7 +19,7 @@ export function Contact () {
           <div class='mt-2'>
             <input type='text' name='name' required placeholder='Name' className='input-field block w-80 text-white  rounded-md border border-white border-opacity-10 bg-white bg-opacity-10' />
           </div>
-          <input type='email' name='email' required placeholder='Email' className='input-field block w-80 text-white rounded-md border border-white border-opacity-10 bg-white bg-opacity-10' />
+          <input type='email' name='email' required placeholder='Email' className='input-field block w-80 rounded-md border border-white border-opacity-10 bg-white bg-opacity-10' />
           <textarea name='message' required placeholder='Message' className=' text-white textarea-field block w-80 rounded-md border border-white border-opacity-10 bg-white bg-opacity-10' />
 
           <button type='submit' className='submit-button'>

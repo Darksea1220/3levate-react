@@ -42,46 +42,46 @@ const projects = [
 export function ProjectsPage () {
   return (
     <div className='bg-[#1C1C1C]'>
-        {/* Imagen PNG arriba del proyecto central */}
+      {/* Imagen PNG arriba del proyecto central */}
 
-        <div className='max-w-md ml-20 mt-4'>
-          <img src='src/img/projtitle.png ' alt='Imagen PNG' style={{ width: '100%' }} />
+      <div className='max-w-md ml-20 mt-4'>
+        <img src='src/img/projtitle.png ' alt='Imagen PNG' style={{ width: '100%' }} />
+      </div>
+
+      <div className='absolute top-0 right-10 mt-0 mr-40 ' style={{ width: '25%' }}>
+        <img src='src/img/yellowellipse.png ' alt='Imagen PNG' />
+      </div>
+
+      <div className='flex justify-center items-start'>
+        {/* Proyecto central */}
+        <div className='max-w-md'>
+          <h2 className='text-2xl font-bold '>{projects[0].title}</h2>
+          <div className='img-container ml-80 mb-80' style={{ width: '200%' }}>
+            <Link to={`/projects/project/${projects[0].title}`} state={projects[0]}>
+              <img src={projects[0].image} alt='imagen de mcdo' />
+            </Link>
+          </div>
         </div>
 
-        <div className='absolute top-0 right-10 mt-0 mr-40 ' style={{ width: '25%' }}>
-          <img src='src/img/yellowellipse.png ' alt='Imagen PNG' />
-        </div>
-
-        <div className='flex justify-center items-start'>
-          {/* Proyecto central */}
-          <div className='max-w-md'>
-            <h2 className='text-2xl font-bold '>{projects[0].title}</h2>
-            <div className='img-container ml-80 mb-80' style={{ width: '100%' }}>
-              <Link to={`/projects/project/${projects[0].title}`} state={projects[0]}>
-                <img src={projects[0].image} alt='imagen de mcdo' />
-              </Link>
-            </div>
+        {/* Lista de proyectos a la derecha */}
+        <div className='flex flex-col items-start ml-auto mr-20' style={{ width: '20%' }}>
+          {/* Botón de Edit */}
+          <div className='mt-4'>
+            <Link to='/login' className='text-blue-500'>Edit</Link>
           </div>
 
-          {/* Lista de proyectos a la derecha */}
-          <div className='flex flex-col items-start ml-auto mr-20' style={{ width: '20%' }}>
-            {/* Botón de Edit */}
-            <div className='mt-4'>
-              <Link to='/login' className='text-blue-500'>Edit</Link>
-            </div>
-
-            {projects.slice(1).map((project) => (
-              <div key={project.id} className='mb-2'>
-                <h2 className='text-xl font-bold mb-2'>{project.title}</h2>
-                <div className='img-container'>
-                  <Link to={`/projects/project/${project.title}`} state={project}>
-                    <img src={project.image} alt={project.title} className='w-full' />
-                  </Link>
-                </div>
+          {projects.slice(1).map((project) => (
+            <div key={project.id} className='mb-2'>
+              <h2 className='text-xl font-bold mb-2'>{project.title}</h2>
+              <div className='img-container'>
+                <Link to={`/projects/project/${project.title}`} state={project}>
+                  <img src={project.image} alt={project.title} className='w-full' />
+                </Link>
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
+      </div>
     </div>
 
   )

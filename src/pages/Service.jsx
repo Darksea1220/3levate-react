@@ -1,4 +1,4 @@
-export function contactUs () {
+export function Service () {
   const sectionStyle = {
     minHeight: '70vh',
     minWidth: '100%',

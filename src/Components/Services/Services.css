@@ -1,0 +1,15 @@
+.services {
+    text-align: center;
+    padding: 50px;
+   }
+   
+   .services h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+   }
+   
+   .services p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+   }
+   

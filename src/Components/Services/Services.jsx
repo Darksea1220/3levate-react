@@ -22,7 +22,7 @@ export function Services () {
       <div className='flex pt-20 px-36'>
         <div className='w-2/3 flex flex-col gap-4'>
           <p className='text-gray-400 text-xl'>_________ Brand Design Systems</p>
-          <p className='text-gray-50 text-7xl'>
+          <p className='text-gray-50 text-7xl hover:scale-110 ease'>
             Design Sistem Development<br />
             User Interface (UI) Design<br />
             Digital Product Development

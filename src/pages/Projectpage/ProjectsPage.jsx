@@ -31,21 +31,22 @@ export function ProjectsPage () {
     <>
       <h1 id='title'> Projects</h1>
       <ul>
-        {
-            projects.map((project) => {
-              const { id, image, title } = project
-              return (
-                <li key={id}>
-                  <div className='img-container'>
-                    <Link to={`/projects/project/${title}`} state={project}>
-                      <img src={image} alt='mcdo' />
-                    </Link>
-                  </div>
-                </li>
-              )
-            })
-        }
+        {projects.map((project) => {
+          const { id, image, title } = project
+          return (
+            <li key={id}>
+              <div className='img-container'>
+                <Link to={`/projects/project/${title}`} state={project}>
+                  <img src={image} alt='mcdo' />
+                </Link>
+              </div>
+            </li>
+          )
+        })}
       </ul>
+      <div>
+        <Link to='/edit/projects'>Edit</Link>
+      </div>
     </>
   )
 }

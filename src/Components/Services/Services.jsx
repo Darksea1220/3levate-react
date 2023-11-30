@@ -22,10 +22,14 @@ export function Services () {
       <div className='flex pt-20 px-36'>
         <div className='w-2/3 flex flex-col gap-4'>
           <p className='text-gray-400 text-xl'>_________ Brand Design Systems</p>
-          <p className='text-gray-50 text-7xl'>
+          <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
             Design Sistem Development<br />
+          </p>
+          <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
             User Interface (UI) Design<br />
-            Digital Product Development
+          </p>
+          <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
+            Digital Product Development<br />
           </p>
         </div>
         <div className='w-1/3 h-[600px] pt-72 pl-44'>
@@ -38,20 +42,30 @@ export function Services () {
         </div>
         <div className='w-2/3 flex flex-col gap-4 text-end'>
           <p className='text-gray-400 text-xl'>Product development and enhancement _________</p>
-          <p className='text-gray-50 text-7xl'>
+          <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
             Prototyping and Testing<br />
+          </p>
+          <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
             UserExperience (UX) Design<br />
+          </p>
+          <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
             User-Centered Research<br />
-            Design Thinking and Ideation
+          </p>
+          <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
+            Design Thinking and Ideation<br />
           </p>
         </div>
       </div>
       <div className='flex flex-col gap-4 py-20 px-36'>
         <p className='text-gray-400 text-xl'>_________ Brand Communication and management</p>
-        <p className='text-gray-50 text-7xl'>
+        <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
           Content Strategy and Copywriting<br />
+        </p>
+        <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
           Project Management and Collaboratio<br />
-          Quality Assurance (QA) and Testing
+        </p>
+        <p className='text-gray-50 text-7xl hover:scale-110 ease-in'>
+          Quality Assurance (QA) and Testing<br />
         </p>
       </div>
       <div className='flex flex-col gap-4 px-36 w-full items-center'>

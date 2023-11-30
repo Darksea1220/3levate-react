@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom'
 import './Header.css'
 
 export function Header () {
-//   const location = userLocation()
-  //   const pageTitle = location.pathname.substring(1)
   const brandText = 'Elevate your vision'
 
   return (
@@ -17,7 +15,9 @@ export function Header () {
           <li><Link to='/contact'>Contact us</Link></li>
         </ul>
       </nav>
-      <p className='brand'>{brandText}</p>
+      <p className='brand'>
+        <Link to='/home'>{brandText}</Link>
+      </p>
     </header>
   )
 }

@@ -9,11 +9,11 @@ export function AppRouter () {
     <main>
       <Routes>
         <Route
-          path='/login'
+          path='login'
           element={<Login />}
         />
         <Route
-          path='/'
+          path=''
           element={
             <>
               <Header />
@@ -24,27 +24,27 @@ export function AppRouter () {
         >
           <Route
             index
-            path='/home'
+            path='home'
             element={<Home />}
           />
           <Route
-            path='/projects'
+            path='projects'
             element={<ProjectsPage />}
           />
           <Route
-            path='/Services'
+            path='Services'
             element={<Services />}
           />
           <Route
-            path='/Contact'
+            path='Contact'
             element={<Contact />}
           />
           <Route
-            path='/projects/project/:title'
+            path='projects/project/:title'
             element={<ProjectDetail />}
           />
           <Route
-            path='/*'
+            path='*'
             element={<PageNotFound />}
           />
         </Route>
